@@ -4,29 +4,29 @@
 
 int main(){
 
-    int number;
+    char symbol;
 
-    printf("Enter a number between 1 and 5: ");
-    scanf("%d", &number);
+    printf("Enter a symbol: ");
+    scanf("%c", &symbol);
 
-    switch (number){
-        case 1:
-            printf("You entered 1\n");
+    switch (symbol){
+        case 'a' ... 'z':
+            printf("You entered a lower case letter\n");
             break;
-        case 2:
-            printf("You entered 2\n");
+        case 'A' ... 'Z':
+            printf("You entered a bigger case letter\n");
             break;
-        case 3:
-            printf("You entered 3\n");
+        case '0' ... '9':
+            printf("You entered a number\n");
             break;
-        case 4:
-            printf("You entered 4\n");
+        case ' ':
+            printf("You entered a space\n");
             break;
-        case 5:
-            printf("You entered 5\n");
-            break;
+        // case 0 ... 127:
+        //     printf("You entered a symbol\n");
+        //     break;
         default:
-            printf("You did not enter a number between 1 and 5\n");
+            printf("You entered something else\n");
             break;
     }
 

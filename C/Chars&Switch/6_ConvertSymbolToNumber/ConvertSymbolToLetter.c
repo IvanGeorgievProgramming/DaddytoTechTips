@@ -16,16 +16,18 @@ int main(){
                 sign = -1;
             }
             else{
-                number = number * 10 + (symbol - '0') * sign;
+                number = number * 10 + (symbol - '0');
             }
         }
     }
     while(symbol != '\n');
 
+    number = number * sign;
+
     printf("The number is %d\n", number);
 
     // To be sure that the program is a number we will add add 1 to it
-    //printf("%d + 1 = %d\n", number, number + 1);
+    printf("%d + 1 = %d\n", number, number + 1);
 
     return 0;
 

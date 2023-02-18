@@ -1,0 +1,1 @@
+printf("You entered a symbol\n");
